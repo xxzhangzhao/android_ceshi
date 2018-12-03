@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:maxHeight="17.0sp"
+            android:text="身高(cm)"
+            android:textColor="#cc222222"
+            android:textSize="15.0sp" />
+        <TextView
+            android:id="@+id/tv_info_height_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11.0dip"
+            android:includeFontPadding="false"
+            android:maxHeight="24.0sp"
+            android:textColor="#cc222222"
+            android:textSize="24.0sp" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <com.example.administrator.prectice.RulerView
+                android:id="@+id/ruler_height"
+                android:layout_width="fill_parent"
+                android:layout_height="68.0dip"
+                android:layout_marginTop="24.0dip"
+                app:alphaEnable="true"
+                app:lineColor="@color/gray"
+                app:lineMaxHeight="40dp"
+                app:lineMidHeight="30dp"
+                app:lineMinHeight="20dp"
+                app:lineSpaceWidth="10dp"
+                app:lineWidth="2dip"
+                app:maxValue="250.0"
+                app:minValue="80.0"
+                app:perValue="1"
+                app:textColor="@color/text_black" />
+            <ImageView
+                android:layout_width="14.0dip"
+                android:layout_height="46.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40.0dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/guo" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="点击改变" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/spannedTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+</LinearLayout>
