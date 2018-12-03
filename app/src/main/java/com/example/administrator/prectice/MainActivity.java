@@ -1,20 +1,12 @@
 package com.example.administrator.prectice;
 
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.text.Spanned;
 import android.view.View;
 import android.widget.TextView;
 
-import com.andview.refreshview.XRefreshView;
-import com.andview.refreshview.XRefreshViewFooter;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 
